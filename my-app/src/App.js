@@ -14,10 +14,8 @@ import Modal from './components/Modal';
 function App() {
  
   return (
-    <React.Fragment>
-   
+    <>
     <NavBar></NavBar>
-    
    
     <Switch>
     <Route exact path='/ProductList' component={ProductList}/>
@@ -28,9 +26,7 @@ function App() {
     </Switch>
     
     <Modal/>
-   
-  
-   </React.Fragment>
+   </>
   );
 }
 

@@ -5,12 +5,12 @@ import {storeProducts} from '../data';
 import {ProductConsumer} from '../context';
 
 export default class ProductList extends Component {
- state={
-  products: storeProducts 
- };
+   state = {
+      products: storeProducts 
+   };
     render() {
      return ( 
-         <React.Fragment>
+         <>
          <div className='py-5'>
          <div className='container'>
          <Title name="our" title="products"/>
@@ -25,7 +25,7 @@ export default class ProductList extends Component {
          </div>
          </div>
          </div>
-         </React.Fragment>
+         </>
          //<Product/>
          );
         }
